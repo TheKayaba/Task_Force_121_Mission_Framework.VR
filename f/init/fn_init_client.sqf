@@ -1,8 +1,19 @@
 //====================================================================================================
 // Client init - Player is not null by this point
 
+//Aim and fatigue
+player setCustomAimCoef 0.35;
+player enableStamina false;
+player enableFatigue false;
+player addEventhandler ["Respawn", {player enableFatigue false}];
+player addEventhandler ["Respawn", {player enableStamina false}];
+player addEventhandler ["Respawn", {player setCustomAimCoef 0.35}];
+
 // Set loadouts
 call m_fnc_loadout_set;
+
+//Safe zone. first param = marker name : second param = radius
+["safe",150,"You Have Entered The Safe Zone","You Have Left The Safe Zone",1] exec "misc\NoKillZone.Sqs";
 
 // Set the group IDs
 [] call compile preprocessFileLineNumbers "f\setGroupID\f_setGroupIDs.sqf";
@@ -24,14 +35,6 @@ m_end_clientWait = [m_fnc_end_clientWait, 5, []] call CBA_fnc_addPerFrameHandler
 
 // Create briefing
 [] execVM "briefing.sqf";
-
-//Aim and fatigue
-player setCustomAimCoef 0.35;
-player enableStamina false;
-player enableFatigue false;
-player addEventhandler ["Respawn", {player enableFatigue false}];
-player addEventhandler ["Respawn", {player enableStamina false}];
-player addEventhandler ["Respawn", {player setCustomAimCoef 0.35}];
 
 // Generate ORBAT page
 [] execVM "f\briefing\f_orbatNotes.sqf";
