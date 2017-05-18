@@ -152,6 +152,7 @@ class ScenarioData
 	overViewPictureLocked="TF121.paa";
 	loadScreen="TF121.paa";
 	respawnDialog=0;
+	disabledAI=1;
 	respawn=3;
 	respawnDelay=10;
 };
@@ -247,7 +248,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Task Force 121 Mission Framework";
-		overviewText="TF121 Mission Framework";
+		overviewText="Change Me";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -2007,7 +2008,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3017.8535,5.0008593,2977.5737};
-						angles[]={-0,3.0928805,0};
+						angles[]={0,3.0928805,0};
 					};
 					side="West";
 					flags=6;
@@ -2319,7 +2320,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3021.2769,5.0014391,2972.2527};
-						angles[]={-0,3.1414182,0};
+						angles[]={0,3.1414182,0};
 					};
 					side="West";
 					flags=6;
@@ -2475,7 +2476,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3019.0869,5.0014391,2972.3296};
-						angles[]={-0,3.1414182,0};
+						angles[]={0,3.1414182,0};
 					};
 					side="West";
 					flags=4;
@@ -2631,7 +2632,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3016.8333,5.0014391,2972.3091};
-						angles[]={-0,3.1414182,0};
+						angles[]={0,3.1414182,0};
 					};
 					side="West";
 					flags=4;
@@ -2926,7 +2927,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3014.3333,5.0014391,2972.3081};
-						angles[]={-0,3.1414182,0};
+						angles[]={0,3.1414182,0};
 					};
 					side="West";
 					flags=4;
