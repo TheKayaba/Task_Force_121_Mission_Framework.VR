@@ -95,8 +95,8 @@ if (_NKZvech == 1) then {_vp="Vehicle Protection Is:  *On*"};
 
 
 ; startup notice
-systemchat format ["No Kill Zone Script v%2 Active For '%1'",_NKZmarker, _NKZver];
-systemchat format ["---  %1  ---",_vp];
+; systemchat format ["No Kill Zone Script v%2 Active For '%1'",_NKZmarker, _NKZver];
+; systemchat format ["---  %1  ---",_vp];
 
 
 

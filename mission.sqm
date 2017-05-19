@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2094.9338,30,2482.3872};
+		pos[]={4001.8621,18.004656,2880.4304};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -1804,8 +1804,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3017.8535,5.0008593,2977.5737};
-						angles[]={0,3.0928805,0};
+						position[]={3017.854,5.0014391,2977.574};
+						angles[]={0,3.1415927,0};
 					};
 					side="West";
 					flags=6;
@@ -1878,7 +1878,6 @@ class Mission
 					};
 					id=639;
 					type="rhsusf_usmc_marpat_wd_uav";
-					atlOffset=-0.00057983398;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2060,7 +2059,6 @@ class Mission
 			{
 			};
 			id=638;
-			atlOffset=-0.00057983398;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10964,6 +10962,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Outlaw 1";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="acex_headless_blacklist";
 					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 					class Value
@@ -10981,7 +10998,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item47
@@ -11772,6 +11789,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Outlaw 2";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="acex_headless_blacklist";
 					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 					class Value
@@ -11789,7 +11825,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item48
@@ -13549,6 +13585,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ACE";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="acex_headless_blacklist";
 					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 					class Value
@@ -13566,7 +13621,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item49
@@ -13993,6 +14048,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="acex_headless_blacklist";
 					expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 					class Value
@@ -14010,7 +14084,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item50

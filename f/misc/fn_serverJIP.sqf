@@ -35,7 +35,7 @@ addMissionEventHandler ["HandleDisconnect",{
 }];
 
 // Add EH for JIP player connect
-"m_JIP_playerConnected" addPublicVariableEventHandler {
+/*"m_JIP_playerConnected" addPublicVariableEventHandler {
 	params ["_varName", "_jipPlayer"];
     
     m_JIP_latestJIPplayer = _jipPlayer;
@@ -43,7 +43,7 @@ addMissionEventHandler ["HandleDisconnect",{
     [{
         [m_JIP_latestJIPplayer, m_spect_spectatorList] remoteExec ["m_fnc_disableCJIP",0];
     }] call CBA_fnc_execNextFrame;
-};
+};*/
 
 // Add EH for spectator list
 "m_spectatorPV" addPublicVariableEventHandler {

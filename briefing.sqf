@@ -11,8 +11,9 @@ if (hasInterface && (isNull player)) then
 
 // ====================================================================================
 // Create Phalanx Diary Entry
-ORBAT_Diary = player createDiarySubject ["ORBAT_Diary", "ORBAT"];
+//ORBAT_Diary = player createDiarySubject ["ORBAT_Diary", "ORBAT"];
 M_Diary = player createDiarySubject ["M_Diary", "[TF121] Misc Info"];
+Radio_Diary = player createDiarySubject ["Comms_Plan", "Comms Plan"];
 
 // ====================================================================================
 // BRIEFING: ADMIN

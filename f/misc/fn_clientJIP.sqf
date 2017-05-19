@@ -39,7 +39,7 @@ if (!hasInterface) exitWith {};
         };
         
         // Game started, player is JIP, put him in spectate
-        if (((m_hasGameStarted) && {(isNil "m_didJipCheck")}) && {isMultiplayer}) then {
+        /*if (((m_hasGameStarted) && {(isNil "m_didJipCheck")}) && {isMultiplayer}) then {
             m_didJipCheck = true;
             [_handle] call CBA_fnc_removePerFrameHandler;
             diag_log format["m JIP Check: Game started, removing PFH, adding waitUntilAndExec."];
@@ -49,6 +49,6 @@ if (!hasInterface) exitWith {};
                 player setVariable ["m_loadoutAssigned",false];
                 [player,objNull,0,0,true] spawn f_fnc_CamInit;
             }, []] call CBA_fnc_waitUntilAndExecute;
-        };
+        };*/
     };
 }, 0, [_this]] call CBA_fnc_addPerFrameHandler;

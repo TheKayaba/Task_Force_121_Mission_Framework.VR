@@ -18,7 +18,7 @@ f_param_radios = ["m_param_radios",0] call BIS_fnc_getParamValue;
       [] execVM "f\radios\acre2\acre2_init.sqf";
     };
     default {
-      [] execVM "f\radios\acre2\acre2_init.sqf";
+      //[] execVM "f\radios\acre2\acre2_init.sqf";
     };
   };
 //};
