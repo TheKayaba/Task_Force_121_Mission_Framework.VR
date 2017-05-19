@@ -233,8 +233,8 @@ _args params ["_addGearTime","_frameAdded","_char", "_loadout"];
 
 if (diag_tickTime > _addGearTime && {diag_frameNo-10 > _frameAdded}) then {
 
-removeAllWeapons player;
-removeGoggles player;
+//removeAllWeapons player;
+//removeGoggles player;
 
 [_handle] call CBA_fnc_removePerFrameHandler;
 
