@@ -1,20 +1,57 @@
-#include "description\definitions.hpp"
-#include "description\cfgNotifications.hpp"
-#include "description\cfgParams.hpp"
-#include "description\ACESettings.hpp"
+//Check https://community.bistudio.com/wiki/Description.ext for all potential attributes
 
-#include "f\spect\config.hpp"
-class CfgFunctions {
-    #include "description\cfgFunctions.hpp"
-    class F {
-        class safeStart {
-            file = "f\safeStart";
-            class safety{};
-        };
-        #include "f\spect\functions.hpp"
-    };
-    class M {
-        #include "f\functions.hpp"
+//Will not execute a onPlayerRespawn.sqf on mission start
+//Player will spawn on unit location at start, rather than respawn module
+respawnOnStart = -1;
+
+/*
+
+//BREACH SCRIPT
+//Un-comment to use
+//Settings in "sushi_scripts\breach-settings.cpp"
+
+#define SAF_DEF
+    #include "sushi_scripts\core\init.cpp"
+    #include "sushi_scripts\breach\init.cpp"
+#undef SAF_DEF
+
+class CfgFunctions
+{
+    class SAF {
+        #define SAF_FNCS
+            #include "sushi_scripts\core\init.cpp"
+            #include "sushi_scripts\breach\init.cpp"
+        #undef SAF_FNCS
     };
 };
-#include "f\display.hpp"
+
+*/
+
+/*
+
+//For custom sound files
+
+class CfgSounds
+{
+	sounds[] = {Example, Example1};
+
+	class Example
+	{
+		name = "Example";
+		//filename, volume, pitch, distance
+		sound[] = {"PATH_TO_SOUNDFILE", 1, 1, 100};
+		// subtitle delay in seconds, subtitle text - Not needed if you just want sound
+		//Use the bottom one if you don't want text
+		//titles[] = {1, "*Example*"};
+		titles[] = {};
+	};
+	class Example1
+	{
+		name = "Example1";
+		//filename, volume, pitch, distance
+		sound[] = {"PATH_TO_SOUNDFILE", 1, 1, 100};
+		titles[] = {};
+	};
+};
+
+*/
