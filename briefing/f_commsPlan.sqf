@@ -5,7 +5,7 @@ private _commsText = "
 <br/>
 TF121 Command (69.0)
 <br/><br/>
-2/75 Rangers (109.0)
+2/75th Rangers, 2nd Battalion (109.0)
 <br/>
     1st Platoon (110.0)
 <br/>
@@ -37,15 +37,6 @@ Air To Ground (70.0)
 <br/>
 Airspace Communications (71.0)
 <br/><br/>
-Dragons Detachment (71.1)
-    Hammer Heads Detachment (71.2)
-<br/>
-Vengeance UH-1Y Detachment (71.3)
-    Vengeance AH-1Z Detachment (71.4)
-<br/>
-Vikings F/A-18D Detachment (71.5)
-    Avengers F35B Detachment (71.6)
-<br/><br/>
 Fleet Air Traffic (75.0)
     Primary Air Base Traffic (75.1)
 <br/>
@@ -66,23 +57,31 @@ Zeus Controller (Kingpin)
 <br/>
 Forward Air Controller (Omega)
 <br/><br/>
-31st MEU, Foxtrot CO., 1st Platoon (Sunrise)
+2/75th Ranger Regiment, 2nd Battalion, 1st Platoon (Broadsword)
+<br/>
+	JTAC (Shortsword)
 <br/><br/>
 1st SFOD-D A Squadron (Outlaw)
 <br/>
 1st SFOD-D A Squadron, JTAC (Widow)
 <br/><br/>
-Dragons Detachment (Dragon)
+CH-47F (Razor)
 <br/>
-Hammer Heads Detachment (Hammer)
+UH-60M (Super)
 <br/>
-Vengeance UH-1Y Detachment (Vengeance)
+MH-6 (Star)
 <br/>
-Vengeance AH-1Z Detachment (Vengeance)
+AH-6 (Prowler)
 <br/>
-Vikings F/A-18D Detachment (Viking)
+AH-64D (Longbow)
 <br/>
-Avengers F35B Detachment (Wake)
+C-130J (Arrow)
+<br/>
+AC-130 (Spectre)
+<br/>
+A-10C (Archer)
+<br/>
+F-16 (Hunter)
 ";
 
 player createDiaryRecord ["M_Diary", ["Task Force 121 Communications Plan", _commsText]];
