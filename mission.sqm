@@ -19,7 +19,7 @@ class EditorData
 		pos[]={4002.595,30,1975.0737};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -549,7 +549,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=99;
+		items=98;
 		class Item0
 		{
 			dataType="Logic";
@@ -20419,16 +20419,6 @@ class Mission
 				};
 				nAttributes=8;
 			};
-		};
-		class Item98
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=1025;
-			atlOffset=-5;
 		};
 	};
 	class Connections
