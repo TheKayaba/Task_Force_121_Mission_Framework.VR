@@ -1,0 +1,63 @@
+//Check https://community.bistudio.com/wiki/Description.ext for all potential attributes
+
+//Will not execute an onPlayerRespawn.sqf on mission start
+//Player will spawn on unit location at start, rather than respawn module
+respawnOnStart = -1;
+
+//Mission Info
+loadScreen ="TF121.paa";
+onLoadMission = "taskforce121.us";
+author = "Task Force 121 : S-4" // 2LT Kenny;
+onLoadName = "Operation Mount Fuji"; //Name displayed on loading screen
+briefingName = "Operation Mount Fuji"; //Name displayed in mission selection screen
+
+//Disable global and command chat
+disableChannels[]={{0,true,true},{2,true,true}};
+
+/* BLOCK COMMENT BEGIN
+//BREACH SCRIPT
+//Un-comment to use
+//Settings in "sushi_scripts\breach-settings.cpp"
+
+#define SAF_DEF
+    #include "sushi_scripts\core\init.cpp"
+    #include "sushi_scripts\breach\init.cpp"
+#undef SAF_DEF
+
+class CfgFunctions
+{
+    class SAF {
+        #define SAF_FNCS
+            #include "sushi_scripts\core\init.cpp"
+            #include "sushi_scripts\breach\init.cpp"
+        #undef SAF_FNCS
+    };
+};
+BLOCK COMMENT END */
+
+/*
+//For custom sound files
+
+class CfgSounds
+{
+	sounds[] = {Example, Example1};
+
+	class Example
+	{
+		name = "Example";
+		//filename, volume, pitch, distance
+		sound[] = {"PATH_TO_SOUNDFILE", 1, 1, 100};
+		// subtitle delay in seconds, subtitle text - Not needed if you just want sound
+		//Use the bottom one if you don't want text
+		//titles[] = {1, "*Example*"};
+		titles[] = {};
+	};
+	class Example1
+	{
+		name = "Example1";
+		//filename, volume, pitch, distance
+		sound[] = {"PATH_TO_SOUNDFILE", 1, 1, 100};
+		titles[] = {};
+	};
+};
+*/
